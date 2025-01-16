@@ -1,0 +1,94 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and container styling */
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 22rem;
+  }
+  
+  h1.mainHeading {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  /* Calculator styling */
+  .cal {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  input[type="text"] {
+    grid-column: span 4;
+    width: 100%;
+    padding: 20px;
+    font-size: 2rem;
+    text-align: right;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    font-size: 1.5rem;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  button:active {
+    background-color: #ddd;
+  }
+  
+  button[aria-label="Clear all"] {
+    background-color: #ff4d4d;
+    color: white;
+    grid-column: span 2;
+  }
+  
+  button[aria-label="Clear last entry"] {
+    background-color: #ffcc00;
+    color: white;
+  }
+  
+  button[aria-label="Multiply"],
+  button[aria-label="Divide"],
+  button[aria-label="Subtract"],
+  button[aria-label="Percentage"],
+  button[aria-label="Add"] {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  button[aria-label="Equals"] {
+    background-color: #2196f3;
+    color: white;
+  }
+  
+
+  
